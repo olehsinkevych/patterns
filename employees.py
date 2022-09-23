@@ -8,7 +8,7 @@ class ProjectManager
 
 from __future__ import annotations
 import itertools
-from typing import List, Optional, TYPE_CHECKING
+from typing import List, TYPE_CHECKING
 if TYPE_CHECKING:
     from project import Project, Assignment
 
@@ -72,7 +72,8 @@ class Developer:
         if project in self.projects:
             raise ValueError(f"Project {project.title} already exists")
         self.projects.append(project)
-        print(f"Project {project.title} has been added to developer {self.full_name}")
+        print(f"Project {project.title} has been added to developer "
+              f"{self.full_name}")
 
     def unassign(self, project: Project) -> None:
         """Assigns current developer to project instance.

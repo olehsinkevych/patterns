@@ -79,7 +79,7 @@ class Assignment:
     def __init__(self, description: str) -> None:
         """Assignment initializer."""
         self.description: str = description
-        self.received_tasks: Dict = dict()
+        self.received_tasks: Dict = {}
         self.status: str = ""
         self.is_done = False
 
