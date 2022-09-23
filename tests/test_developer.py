@@ -1,13 +1,6 @@
-from unittest import TestCase
-
 from employees import Developer
 
 
-class TestDeveloper(TestCase):
+class TestDeveloper:
+    pass
 
-    def setUp(self) -> None:
-        pass
-
-    def test_developer_attributes(self):
-        dev = Developer()
-        self.a
